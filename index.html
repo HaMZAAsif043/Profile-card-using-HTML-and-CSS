@@ -12,6 +12,127 @@
     <!--  Boxican Link  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <style>
+* { /* apply to all elements */
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'test Revolution', sansserif; /* set font family */
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f1f4;
+}
+.Profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgb(4, 37, 33);
+    border-radius: 25px;
+    position: relative;
+}
+.Profile-card::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 24px 24px 0 0;
+    height: 36%;
+    width: 100%;
+    background-color: #2A2C24;
+}
+ .img
+ {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070fa;
+    padding: 3px;
+}
+
+.profile{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 3px solid #fff1ff;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    font-size: 24px;
+    font-weight: 500px;
+}
+.job{
+    font-size: 22px;
+    font-weight: 400;
+}
+.media{
+    display: flex;
+    align-items: center;
+}
+.media a{
+    font-size :18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #4070fa;
+    margin: 0px 8px ;
+    height: 34px;
+    width: 34px;
+}
+.buttons button{
+    color: #fff;
+    border: none;
+    font: size 14px; 
+    font-weight: 400px;
+    margin: 10px 10px;
+    padding:8px 24px ;
+    background-color: #575A4B;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.buttons button:hover{
+    background-color: #0e4bf1;
+}
+.analytics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 0 60px; /* Removed 'px' from the padding values */
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i{
+    font-size:12px;
+    margin-right: 20px;
+    
+}
+.data :last-child{
+    border-right:none ;
+}
+    </style>
 </head>
 
 <body>
